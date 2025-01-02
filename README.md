@@ -38,6 +38,7 @@ Sqruff currently supports the following SQL dialects:
 - [**SparkSql**](https://spark.apache.org/sql/)
 - [**SQLite**](https://www.sqlite.org/lang.html)
 - [**Trino**](https://trino.io/docs/current/sql.html)
+- [**Transact-SQL**](https://docs.microsoft.com/en-us/sql/t-sql/language-reference) (aka T-SQL)
 
 While those above are the supported dialects, we are working on adding support for more dialects in the future.
 
