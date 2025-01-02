@@ -30,6 +30,7 @@ pub enum DialectKind {
     Sparksql,
     Sqlite,
     Trino,
+    Tsql,
 }
 
 /// Generate a readout of available dialects.

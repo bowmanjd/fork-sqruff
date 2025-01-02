@@ -47,6 +47,10 @@ mod sqlite_keywords;
 pub mod trino;
 #[cfg(feature = "trino")]
 mod trino_keywords;
+#[cfg(feature = "tsql")]
+pub mod tsql;
+#[cfg(feature = "tsql")]
+mod tsql_keywords;
 
 pub fn kind_to_dialect(kind: &DialectKind) -> Option<Dialect> {
     #[allow(unreachable_patterns)]
@@ -74,6 +78,8 @@ pub fn kind_to_dialect(kind: &DialectKind) -> Option<Dialect> {
         DialectKind::Sqlite => sqlite::dialect(),
         #[cfg(feature = "trino")]
         DialectKind::Trino => trino::dialect(),
+        #[cfg(feature = "tsql")]
+        DialectKind::Tsql => tsql::dialect(),
         _ => return None,
     })
 }

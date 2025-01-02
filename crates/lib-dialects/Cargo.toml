@@ -30,6 +30,7 @@ default = [
     "sparksql",
     "sqlite",
     "trino",
+    "tsql",
 ]
 athena = []
 bigquery = []
@@ -43,6 +44,7 @@ snowflake = []
 sparksql = ["hive"]
 sqlite = []
 trino = []
+tsql = []
 
 [dependencies]
 sqruff-lib-core.workspace = true
